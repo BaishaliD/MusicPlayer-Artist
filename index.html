@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Music Player</title>
+
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/198cd6dc1b.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+
+	
+<!-- .......................................NAV BAR.............................................. -->
+	<header>
+
+		<nav>
+			<div class="nav-left">
+				<div class="logo">
+					<div class="thumbnail-xxs-square image-round">
+					<img src="static/logo.jpg">
+				</div>
+				</div>
+				<div class="nav-menu">
+					<div class="nav-menu-item pointer">Home</div>
+					<div class="nav-menu-item pointer">Favourites</div>
+					<div class="nav-menu-item pointer">Playlists</div>			
+				</div>	
+			
+
+				<div class="nav-hamburger nav-menu-item pointer">
+						<input type="checkbox" id="cb-nav">
+						<label class="tab-title pointer" for="cb-nav">
+							<i class="fas fa-bars"></i>
+						</label>
+						<div class="hb-dropdown">
+							<!-- <div class="dropdown-text pointer"> -->
+								<div class="dropdown-text-item">Home</div>
+								<div class="dropdown-text-item">Favourites</div>
+								<div class="dropdown-text-item">Playlists</div>
+							<!-- </div> -->
+						</div>
+				</div>
+
+			</div>
+
+			<div class="nav-right">
+				<div class="notification">
+					<input type="checkbox" id="notif">
+					<label class="bell-icon pointer" for="notif">
+						<i class="fas fa-bell"></i>
+					</label>
+					<div class="notif-box">
+						<div class="content-title">
+							<h2>Notifications</h2>
+						</div>
+						<hr>
+						<div class="notif-item">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</div>
+						<hr>
+						<hr>
+						<div class="notif-item">
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						</div>
+						<hr>
+						<hr>					
+					</div>
+				</div>
+				<input type="checkbox" id="right-menu">		
+				<label for="right-menu">		
+					<div class="thumbnail-xxs-square image-round pointer">
+						<img src="static/baishali-profile-image.png">
+					</div>
+				</label>
+				<div class="side-menu">
+					<div class="side-menu-item" style="text-transform: none;">
+						<b>Baishali Datta</b>					
+					</div>
+					<hr>
+					<div class="side-menu-item">my profile</div>
+					<hr>
+					<div class="side-menu-item">General settings</div>
+					<hr>
+					<div class="side-menu-item">Playback settings</div>
+					<hr>
+					<div class="side-menu-item">Display settings</div>
+					<hr>
+					<div class="side-menu-item">Notification settings</div>
+					<hr>
+					<div class="side-menu-item">Help</div>
+					<hr>
+					<div class="side-menu-item">Log out</div>
+				</div>
+			</div>
+		</nav>
+		<div class="top-padding">
+			
+		</div>
+	</header>
+
+	<main class="artist-page">
+
+<!-- .........................................................MAIN SECTION............................................................. -->
+		<div id="main-container">
+			<div class="artist">
+				<div class="artist-image">
+					<img src="static/kodaline.jpg">
+				</div>
+				<div class="artist-info">
+					<div class="header">
+						<div class="artist-title">
+							<h2>Kodaline</h2>
+							<p>64 tracks</p>
+						</div>
+						<div class="followers">39,346 followers</div>
+					</div>
+					<div class="text">
+						Kodaline is an Irish rock band. The group comprises Steve Garrigan, Mark Prendergast, Vincent May and Jason Boland. 
+					</div>
+					<button class="follow-btn pointer">Follow</button>
+				</div>
+			</div>
+			<div class="track-list-heading">
+				<div>
+					<h2>Top tracks</h2>
+				</div>
+				<button class="shuffle-btn pointer">Shuffle</button>
+			</div>
+			<div class="track-list">
+				<div class="track-list-item pointer">
+					<div class="left">
+						<div class="serial-no">01</div>
+						<div class="thumbnail-xs-square">
+							<img src="static/kodaline-one-day.jpg">
+						</div>
+						<div class="description-left">
+							<div class="title">
+								All I want
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="like-icon centred pointer"><i class="far fa-thumbs-up"></i><span class="tooltip">Like</span></div>
+						<div class="plus-icon centred pointer"><i class="fas fa-plus"></i><span class="tooltip">Add to queue</span></div>
+					</div>
+				</div>
+				<div class="track-list-item pointer">
+					<div class="left">
+						<div class="serial-no">02</div>
+						<div class="thumbnail-xs-square">
+							<img src="static/kodaline-sometimes.jpg">
+						</div>
+						<div class="description-left">
+							<div class="title">
+								high hopes
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="like-icon centred pointer"><i class="far fa-thumbs-up"></i><span class="tooltip">Like</span></div>
+						<div class="plus-icon centred pointer"><i class="fas fa-plus"></i><span class="tooltip">Add to queue</span></div>
+					</div>
+
+				</div>
+				<div class="track-list-item pointer">
+					<div class="left">
+						<div class="serial-no">03</div>
+						<div class="thumbnail-xs-square">
+							<img src="static/kodaline-in-a-perfect-world.jpg">
+						</div>
+						<div class="description-left">
+							<div class="title">
+								moving on
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="like-icon centred pointer"><i class="far fa-thumbs-up"></i><span class="tooltip">Like</span></div>
+						<div class="plus-icon centred pointer"><i class="fas fa-plus"></i><span class="tooltip">Add to queue</span></div>
+					</div>
+
+				</div>
+				<div class="track-list-item pointer">
+					<div class="left">
+						<div class="serial-no">04</div>
+						<div class="thumbnail-xs-square">
+							<img src="static/kodaline-brother.jpg">
+						</div>
+						<div class="description-left">
+							<div class="title">
+								follow your fire
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="like-icon centred pointer"><i class="far fa-thumbs-up"></i><span class="tooltip">Like</span></div>
+						<div class="plus-icon centred pointer"><i class="fas fa-plus"></i><span class="tooltip">Add to queue</span></div>
+					</div>
+
+				</div>
+				<div class="track-list-item pointer">
+					<div class="left">
+						<div class="serial-no">05</div>
+						<div class="thumbnail-xs-square">
+							<img src="static/kodaline-love-like-this.jpg">
+						</div>
+						<div class="description-left">
+							<div class="title">
+								wherever you are
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="like-icon centred pointer"><i class="far fa-thumbs-up"></i><span class="tooltip">Like</span></div>
+						<div class="plus-icon centred pointer"><i class="fas fa-plus"></i><span class="tooltip">Add to queue</span></div>
+					</div>
+
+				</div>
+				<div class="track-list-item pointer">
+					<div class="left">
+						<div class="serial-no">06</div>
+						<div class="thumbnail-xs-square">
+							<img src="static/kodaline-one-day.jpg">
+						</div>
+						<div class="description-left">
+							<div class="title">
+								sometimes
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="like-icon centred pointer"><i class="far fa-thumbs-up"></i><span class="tooltip">Like</span></div>
+						<div class="plus-icon centred pointer"><i class="fas fa-plus"></i><span class="tooltip">Add to queue</span></div>
+					</div>
+
+				</div>
+				<div class="track-list-item pointer">
+					<div class="left">
+						<div class="serial-no">07</div>
+						<div class="thumbnail-xs-square">
+							<img src="static/kodaline-sometimes.jpg">
+						</div>
+						<div class="description-left">
+							<div class="title">
+								the one
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="like-icon centred pointer"><i class="far fa-thumbs-up"></i><span class="tooltip">Like</span></div>
+						<div class="plus-icon centred pointer"><i class="fas fa-plus"></i><span class="tooltip">Add to queue</span></div>
+					</div>
+
+				</div>
+				<div class="track-list-item pointer">
+					<div class="left">
+						<div class="serial-no">08</div>
+						<div class="thumbnail-xs-square">
+							<img src="static/kodaline-brother.jpg">
+						</div>
+						<div class="description-left">
+							<div class="title">
+								after the fail
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="like-icon centred pointer"><i class="far fa-thumbs-up"></i><span class="tooltip">Like</span></div>
+						<div class="plus-icon centred pointer"><i class="fas fa-plus"></i><span class="tooltip">Add to queue</span></div>
+					</div>
+
+				</div>
+				<div class="track-list-item pointer">
+					<div class="left">
+						<div class="serial-no">09</div>
+						<div class="thumbnail-xs-square">
+							<img src="static/kodaline-love-like-this.jpg">
+						</div>
+						<div class="description-left">
+							<div class="title">
+								all comes down
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="like-icon centred pointer"><i class="far fa-thumbs-up"></i><span class="tooltip">Like</span></div>
+						<div class="plus-icon centred pointer"><i class="fas fa-plus"></i><span class="tooltip">Add to queue</span></div>
+					</div>
+
+				</div>
+				<div class="track-list-item pointer">
+					<div class="left">
+						<div class="serial-no">10</div>
+						<div class="thumbnail-xs-square">
+							<img src="static/kodaline-one-day.jpg">
+						</div>
+						<div class="description-left">
+							<div class="title">
+								big bad world
+							</div>
+						</div>
+					</div>
+					<div class="right">
+						<div class="like-icon centred pointer"><i class="far fa-thumbs-up"></i><span class="tooltip">Like</span></div>
+						<div class="plus-icon centred pointer"><i class="fas fa-plus"></i><span class="tooltip">Add to queue</span></div>
+					</div>
+
+				</div>
+			</div>
+			<div class="view-all pointer">
+				View all
+			</div>
+		</div>
+
+<!-- .............................................ASIDE SECTION................................................ -->
+		<div id="aside-container">
+			<div class="content-title">
+					<h2>Releases</h2>
+			</div>
+			<div class="releases">
+				<div class="releases-item">
+					<div class="thumbnail-square pointer">
+						<img src="static/kodaline-sometimes.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Sometimes
+						</div>
+						<div class="subtitle">
+							2020
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<i class="far fa-thumbs-up"></i>
+					</div>
+				</div>
+				<div class="releases-item">
+					<div class="thumbnail-square pointer">
+						<img src="static/kodaline-love-like-this.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Love like this
+						</div>
+						<div class="subtitle">
+							2015
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<i class="far fa-thumbs-up"></i>
+					</div>
+				</div>
+				<div class="releases-item">
+					<div class="thumbnail-square pointer">
+						<img src="static/kodaline-in-a-perfect-world.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							In a perfect world
+						</div>
+						<div class="subtitle">
+							2013
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<i class="far fa-thumbs-up"></i>
+					</div>
+				</div>
+				<div class="releases-item">
+					<div class="thumbnail-square pointer">
+						<img src="static/kodaline-sometimes.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Sometimes(Acoustic)
+						</div>
+						<div class="subtitle">
+							2020
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<i class="far fa-thumbs-up"></i>
+					</div>
+				</div>
+				<div class="releases-item">
+					<div class="thumbnail-square pointer">
+						<img src="static/kodaline-brother.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Brother
+						</div>
+						<div class="subtitle">
+							2017
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<i class="far fa-thumbs-up"></i>
+					</div>
+				</div>
+			</div>
+			<div class="view-all pointer">
+				View all
+			</div>
+			<div class="content-title">
+					<h2>Fans also like</h2>
+			</div>
+			<div class="fans-like">
+				<div class="releases-item">
+					<div class="thumbnail-square image-round pointer">
+						<img src="static/phosphorescent.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Phosphorescent
+						</div>
+						<div class="subtitle">
+							32,456 followers
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<i class="far fa-thumbs-up"></i>
+					</div>
+				</div>
+				<div class="releases-item">
+					<div class="thumbnail-square image-round pointer">
+						<img src="static/lorde.png">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Seafret
+						</div>
+						<div class="subtitle">
+							15,930 followers
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<i class="far fa-thumbs-up"></i>
+					</div>
+				</div>
+				<div class="releases-item">
+					<div class="thumbnail-square image-round pointer">
+						<img src="static/lumineers.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							The Lumineers
+						</div>
+						<div class="subtitle">
+							23,124 followers
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<i class="far fa-thumbs-up"></i>
+					</div>
+				</div>
+				<div class="releases-item">
+					<div class="thumbnail-square image-round pointer">
+						<img src="static/local-train.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Sleeping at last
+						</div>
+						<div class="subtitle">
+							26,345 followers
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<i class="far fa-thumbs-up"></i>
+					</div>
+				</div>
+			</div>
+			<div class="content-title">
+					<h2>Playlists</h2>
+			</div>
+			<div class="playlists">
+				
+				<div class="releases-item">
+					<div class="thumbnail-square pointer">
+						<img src="static/indie-rock.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Folk Rock
+						</div>
+						<div class="subtitle">
+							32 tracks
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<i class="far fa-thumbs-up"></i>
+					</div>
+				</div>
+				<div class="releases-item">
+					<div class="thumbnail-square pointer">
+						<img src="static/kodaline-one-day.jpg">
+					</div>
+					<div class="description-left">
+						<div class="title">
+							Indie Delight
+						</div>
+						<div class="subtitle">
+							41 tracks
+						</div>
+					</div>
+					<div class="like-icon centred pointer">
+						<i class="far fa-thumbs-up"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</main>
+
+
+<!-- ...........................................FOOTER BAR...................................................... -->
+	<footer>
+
+
+		<div class="song-description">
+			<div class="thumbnail-xs-square">
+				<img src="static/kodaline-love-like-this.jpg">							
+			</div>
+			<div class="description-left">
+				<div class="title">
+					All I want
+				</div>
+				<div class="subtitle">
+					Kodaline							
+				</div>
+			</div>
+		</div>
+		<div class="play-btn pointer">
+			<i class="far pb fa-play-circle"></i>
+		</div>
+		<div class="progress-panel">
+			<div class="buttons">
+				<div class="button pointer">
+					<i class="fas fa-random"></i>
+				</div>
+				<div class="button pointer">
+					<i class="fas fa-step-backward"></i>
+				</div>
+				<div class="button pointer">
+					<i class="far fa-play-circle"></i>
+				</div>
+				<div class="button pointer">
+					<i class="fas fa-step-forward"></i>
+				</div>
+				<div class="button pointer">
+					<i class="fas fa-random"></i>
+				</div>
+			</div>
+			<div class="time-and-progress">
+				<div class="time">
+					1:29
+				</div>
+				<div class="progress-bar pointer">
+					<div class="progress"></div>
+					<div class="progress-pointer"></div>
+				</div>
+				<div class="time">
+					4:05
+				</div>
+			</div>
+		</div>
+		<div class="like-icon footer-icon pointer"><i class="far fa-thumbs-up"></i></div>
+		<div class="download-icon footer-icon pointer"><i class="fas fa-volume-up"></i></div>
+		<div class="footer-menu footer-icon pointer"><i class="fas fa-bars"></i></div>
+	</footer>
+
+</body>
+</html>
